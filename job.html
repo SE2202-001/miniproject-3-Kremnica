@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upwork Jobs Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Upwork Jobs Analysis</h1>
+  </header>
+
+  <main>
+    <!-- File Upload Section -->
+    <section id="file-upload-section">
+      <h2>Upload Job Data</h2>
+      <input type="file" id="upload-json" accept=".json" />
+      <p id="file-error" class="error-message"></p>
+    </section>
+
+    <!-- Filter Section -->
+    <section id="filter-section">
+      <h2>Filter Jobs</h2>
+      <form id="filter-form">
+        <label for="filter-level">Level:</label>
+        <select id="filter-level" name="filter-level">
+          <option value="">All Levels</option>
+        </select>
+
+        <label for="filter-type">Type:</label>
+        <select id="filter-type" name="filter-type">
+          <option value="">All Types</option>
+        </select>
+
+        <label for="filter-skill">Skill:</label>
+        <select id="filter-skill" name="filter-skill">
+          <option value="">All Skills</option>
+        </select>
+      </form>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section id="job-listings-section">
+      <h2>Job Listings</h2>
+      <div id="job-listings">
+        <!-- Job titles will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Job Details Section -->
+    <section id="job-details-section">
+      <h2>Job Details</h2>
+      <div id="job-details">
+        <p>Select a job to view details.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Upwork Jobs Analysis &copy; 2024</p>
+  </footer>
+
+  <!-- Include JavaScript -->
+  <script src="jobCode-1.js"></script>
+</body>
+</html>
