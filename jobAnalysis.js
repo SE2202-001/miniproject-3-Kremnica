@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add click event to reveal detailed job information
       jobDiv.addEventListener("click", () => {
         displayJobDetails(job);
+        
       });
 
       jobListings.appendChild(jobDiv);
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Details:</strong> ${job.Detail || "No additional details available."}</p>
       <a href="${job["Job Page Link"]}" target="_blank">View Job Page</a>
     `;
+    document.getElementById("job-details-section").scrollIntoView({ behavior: "smooth" });
   }
 
   // Populate Filters
